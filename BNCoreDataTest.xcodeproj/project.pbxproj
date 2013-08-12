@@ -20,6 +20,7 @@
 		3355880817AA78AE00BBF3A4 /* notes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3355880717AA78AE00BBF3A4 /* notes.plist */; };
 		3355880B17AA7A6500BBF3A4 /* BNNotepadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3355880A17AA7A6500BBF3A4 /* BNNotepadVC.m */; };
 		3355880E17AA838A00BBF3A4 /* BNCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3355880D17AA838A00BBF3A4 /* BNCell.m */; };
+		3370EFE817B91FBB00807576 /* bndatastore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3370EFE617B91FBB00807576 /* bndatastore.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		3355880A17AA7A6500BBF3A4 /* BNNotepadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNNotepadVC.m; sourceTree = "<group>"; };
 		3355880C17AA838A00BBF3A4 /* BNCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCell.h; sourceTree = "<group>"; };
 		3355880D17AA838A00BBF3A4 /* BNCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCell.m; sourceTree = "<group>"; };
+		3370EFE717B91FBB00807576 /* bndatastore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bndatastore.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		335587D517AA708200BBF3A4 = {
 			isa = PBXGroup;
 			children = (
+				3370EFE617B91FBB00807576 /* bndatastore.xcdatamodeld */,
 				3355880C17AA838A00BBF3A4 /* BNCell.h */,
 				3355880D17AA838A00BBF3A4 /* BNCell.m */,
 				3355880717AA78AE00BBF3A4 /* notes.plist */,
@@ -187,6 +190,7 @@
 				335587F217AA708200BBF3A4 /* BNAppDelegate.m in Sources */,
 				3355880B17AA7A6500BBF3A4 /* BNNotepadVC.m in Sources */,
 				3355880E17AA838A00BBF3A4 /* BNCell.m in Sources */,
+				3370EFE817B91FBB00807576 /* bndatastore.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,8 +313,22 @@
 				3355880317AA708200BBF3A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3370EFE617B91FBB00807576 /* bndatastore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3370EFE717B91FBB00807576 /* bndatastore.xcdatamodel */,
+			);
+			currentVersion = 3370EFE717B91FBB00807576 /* bndatastore.xcdatamodel */;
+			path = bndatastore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 335587D617AA708200BBF3A4 /* Project object */;
 }

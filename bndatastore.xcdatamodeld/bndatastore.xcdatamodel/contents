@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ActionSource" representedClassName="ActionSource" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="devID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="actions" inverseEntity="Location" syncable="YES"/>
+        <relationship name="notesCreate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="create" inverseEntity="Note" syncable="YES"/>
+        <relationship name="notesModify" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="modify" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="Alarm" representedClassName="Alarm" syncable="YES">
+        <attribute name="fireDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="location" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="allarms" inverseEntity="Location" syncable="YES"/>
+        <relationship name="note" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="alarms" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="Attachment" representedClassName="Attachment" syncable="YES">
+        <attribute name="attachmentID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="availabilityView" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="commandTS" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="contentType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileUpdate" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="noteID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="file_1" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="AttachmentFile" inverseName="attachment" inverseEntity="AttachmentFile" syncable="YES"/>
+        <relationship name="file_2" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="AttachmentFile" inverseName="attachment" inverseEntity="AttachmentFile" syncable="YES"/>
+        <relationship name="file_4" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="AttachmentFile" inverseName="attachment" inverseEntity="AttachmentFile" syncable="YES"/>
+        <relationship name="file_8" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="AttachmentFile" inverseName="attachment" inverseEntity="AttachmentFile" syncable="YES"/>
+        <relationship name="note" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="attachments" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="AttachmentFile" representedClassName="AttachmentFile" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="downloadProgress" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uploadProgress" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="attachment" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Attachment" inverseName="file_1" inverseEntity="Attachment" syncable="YES"/>
+    </entity>
+    <entity name="CellCalendar" representedClassName="CellCalendar" syncable="YES">
+        <attribute name="dayKey" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="noteAttach" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="noteAttachData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="noteMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="note" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="cellsCalendar" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="CellDiary" representedClassName="CellDiary" syncable="YES">
+        <attribute name="dayKey" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="len" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="noteAttach" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="noteAttachData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="noteMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="note" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="cellsDiary" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="CellNotepad" representedClassName="CellNotepad" syncable="YES">
+        <attribute name="dateCreate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateEvent" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateModify" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="eventLen" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="monthKey" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="noteAttach" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="noteAttachData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="noteMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="note" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="cellsNotepad" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="Contact" representedClassName="Contact" syncable="YES">
+        <attribute name="fname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="notes" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="contacts" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lng" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewport" optional="YES" attributeType="Transformable" syncable="YES">
+            <userInfo>
+                <entry key="attributeValueClassName" value="NSDictionary"/>
+            </userInfo>
+        </attribute>
+        <relationship name="actions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ActionSource" inverseName="location" inverseEntity="ActionSource" syncable="YES"/>
+        <relationship name="allarms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Alarm" inverseName="location" inverseEntity="Alarm" syncable="YES"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES">
+        <attribute name="commandTS" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="event" optional="YES" attributeType="Transformable" syncable="YES">
+            <userInfo>
+                <entry key="attributeValueClassName" value="NSDictionary"/>
+            </userInfo>
+        </attribute>
+        <attribute name="groupID" attributeType="String" syncable="YES"/>
+        <attribute name="isDone" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="noteID" attributeType="String" syncable="YES"/>
+        <attribute name="noteMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notePass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerID" attributeType="String" syncable="YES"/>
+        <attribute name="smartNote" optional="YES" attributeType="Transformable" syncable="YES">
+            <userInfo>
+                <entry key="attributeValueClassName" value="NSDictionary"/>
+            </userInfo>
+        </attribute>
+        <attribute name="status" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="alarms" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Alarm" inverseName="note" inverseEntity="Alarm" syncable="YES"/>
+        <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Attachment" inverseName="note" inverseEntity="Attachment" syncable="YES"/>
+        <relationship name="cellsCalendar" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CellCalendar" inverseName="note" inverseEntity="CellCalendar" syncable="YES"/>
+        <relationship name="cellsDiary" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CellDiary" inverseName="note" inverseEntity="CellDiary" syncable="YES"/>
+        <relationship name="cellsNotepad" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CellNotepad" inverseName="note" inverseEntity="CellNotepad" syncable="YES"/>
+        <relationship name="contacts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Contact" inverseName="notes" inverseEntity="Contact" syncable="YES"/>
+        <relationship name="create" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ActionSource" inverseName="notesCreate" inverseEntity="ActionSource" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="NoteGroup" inverseName="notes" inverseEntity="NoteGroup" syncable="YES"/>
+        <relationship name="modify" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ActionSource" inverseName="notesModify" inverseEntity="ActionSource" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="NoteTag" inverseName="notes" inverseEntity="NoteTag" syncable="YES"/>
+    </entity>
+    <entity name="NoteGroup" representedClassName="NoteGroup" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="groups" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <entity name="NoteTag" representedClassName="NoteTag" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="notes" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="tags" inverseEntity="Note" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ActionSource" positionX="-196245" positionY="1314" width="128" height="133"/>
+        <element name="Location" positionX="-196418" positionY="959" width="128" height="193"/>
+        <element name="Note" positionX="-196796" positionY="1109" width="128" height="358"/>
+        <element name="NoteGroup" positionX="-197307" positionY="1332" width="128" height="103"/>
+        <element name="NoteTag" positionX="-197309" positionY="1449" width="128" height="88"/>
+        <element name="Contact" positionX="-197309" positionY="1224" width="128" height="88"/>
+        <element name="Attachment" positionX="-196605" positionY="1125" width="128" height="268"/>
+        <element name="AttachmentFile" positionX="-196416" positionY="1197" width="128" height="163"/>
+        <element name="Alarm" positionX="-196607" positionY="941" width="128" height="103"/>
+        <element name="CellCalendar" positionX="-196983" positionY="945" width="128" height="163"/>
+        <element name="CellNotepad" positionX="-197273" positionY="981" width="128" height="193"/>
+        <element name="CellDiary" positionX="-197129" positionY="969" width="128" height="163"/>
+    </elements>
+</model>
