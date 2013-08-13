@@ -51,16 +51,6 @@
         <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="note" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="cellsCalendar" inverseEntity="Note" syncable="YES"/>
     </entity>
-    <entity name="CellDiary" representedClassName="CellDiary" syncable="YES">
-        <attribute name="dayKey" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="len" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="noteAttach" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="noteAttachData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
-        <attribute name="noteMessage" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="note" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="cellsDiary" inverseEntity="Note" syncable="YES"/>
-    </entity>
     <entity name="CellNotepad" representedClassName="CellNotepad" syncable="YES">
         <attribute name="dateCreate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="dateEvent" optional="YES" attributeType="Date" syncable="YES"/>
@@ -117,7 +107,6 @@
         <relationship name="alarms" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Alarm" inverseName="note" inverseEntity="Alarm" syncable="YES"/>
         <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Attachment" inverseName="note" inverseEntity="Attachment" syncable="YES"/>
         <relationship name="cellsCalendar" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CellCalendar" inverseName="note" inverseEntity="CellCalendar" syncable="YES"/>
-        <relationship name="cellsDiary" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CellDiary" inverseName="note" inverseEntity="CellDiary" syncable="YES"/>
         <relationship name="cellsNotepad" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CellNotepad" inverseName="note" inverseEntity="CellNotepad" syncable="YES"/>
         <relationship name="contacts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Contact" inverseName="notes" inverseEntity="Contact" syncable="YES"/>
         <relationship name="create" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ActionSource" inverseName="notesCreate" inverseEntity="ActionSource" syncable="YES"/>
@@ -138,16 +127,15 @@
     </entity>
     <elements>
         <element name="ActionSource" positionX="-196245" positionY="1314" width="128" height="133"/>
-        <element name="Location" positionX="-196418" positionY="959" width="128" height="193"/>
-        <element name="Note" positionX="-196796" positionY="1109" width="128" height="358"/>
-        <element name="NoteGroup" positionX="-197307" positionY="1332" width="128" height="103"/>
-        <element name="NoteTag" positionX="-197309" positionY="1449" width="128" height="88"/>
-        <element name="Contact" positionX="-197309" positionY="1224" width="128" height="88"/>
+        <element name="Alarm" positionX="-196607" positionY="941" width="128" height="103"/>
         <element name="Attachment" positionX="-196605" positionY="1125" width="128" height="268"/>
         <element name="AttachmentFile" positionX="-196416" positionY="1197" width="128" height="163"/>
-        <element name="Alarm" positionX="-196607" positionY="941" width="128" height="103"/>
         <element name="CellCalendar" positionX="-196983" positionY="945" width="128" height="163"/>
-        <element name="CellNotepad" positionX="-197273" positionY="981" width="128" height="193"/>
-        <element name="CellDiary" positionX="-197129" positionY="969" width="128" height="163"/>
+        <element name="CellNotepad" positionX="-197129" positionY="945" width="128" height="193"/>
+        <element name="Contact" positionX="-197309" positionY="1224" width="128" height="88"/>
+        <element name="Location" positionX="-196418" positionY="959" width="128" height="193"/>
+        <element name="Note" positionX="-196796" positionY="1109" width="128" height="343"/>
+        <element name="NoteGroup" positionX="-197307" positionY="1332" width="128" height="103"/>
+        <element name="NoteTag" positionX="-197309" positionY="1449" width="128" height="88"/>
     </elements>
 </model>

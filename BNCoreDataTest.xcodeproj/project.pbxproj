@@ -21,6 +21,19 @@
 		3355880B17AA7A6500BBF3A4 /* BNNotepadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3355880A17AA7A6500BBF3A4 /* BNNotepadVC.m */; };
 		3355880E17AA838A00BBF3A4 /* BNCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3355880D17AA838A00BBF3A4 /* BNCell.m */; };
 		3370EFE817B91FBB00807576 /* bndatastore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3370EFE617B91FBB00807576 /* bndatastore.xcdatamodeld */; };
+		33C6427117B979E900AB90A7 /* NoteTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6427017B979E900AB90A7 /* NoteTag.m */; };
+		33C6427417B979FD00AB90A7 /* CellCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6427317B979FD00AB90A7 /* CellCalendar.m */; };
+		33C6427717B979FD00AB90A7 /* CellDiary.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6427617B979FD00AB90A7 /* CellDiary.m */; };
+		33C6427A17B979FD00AB90A7 /* ActionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6427917B979FD00AB90A7 /* ActionSource.m */; };
+		33C6427D17B979FD00AB90A7 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6427C17B979FD00AB90A7 /* Location.m */; };
+		33C6428017B979FD00AB90A7 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6427F17B979FD00AB90A7 /* Note.m */; };
+		33C6428317B979FD00AB90A7 /* NoteGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6428217B979FD00AB90A7 /* NoteGroup.m */; };
+		33C6428617B979FD00AB90A7 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6428517B979FD00AB90A7 /* Contact.m */; };
+		33C6428917B979FD00AB90A7 /* CellNotepad.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6428817B979FD00AB90A7 /* CellNotepad.m */; };
+		33C6428C17B979FD00AB90A7 /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6428B17B979FD00AB90A7 /* Alarm.m */; };
+		33C6428F17B979FD00AB90A7 /* AttachmentFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6428E17B979FD00AB90A7 /* AttachmentFile.m */; };
+		33C6429217B979FE00AB90A7 /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6429117B979FE00AB90A7 /* Attachment.m */; };
+		33C6429517B97A6000AB90A7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C6429417B97A6000AB90A7 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +44,7 @@
 		335587E917AA708200BBF3A4 /* BNCoreDataTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BNCoreDataTest-Info.plist"; sourceTree = "<group>"; };
 		335587EB17AA708200BBF3A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		335587ED17AA708200BBF3A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		335587EF17AA708200BBF3A4 /* BNCoreDataTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BNCoreDataTest-Prefix.pch"; sourceTree = "<group>"; };
+		335587EF17AA708200BBF3A4 /* BNCoreDataTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BNCoreDataTest-Prefix.pch"; path = "BNCoreDataTest/BNCoreDataTest-Prefix.pch"; sourceTree = "<group>"; };
 		335587F017AA708200BBF3A4 /* BNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNAppDelegate.h; sourceTree = "<group>"; };
 		335587F117AA708200BBF3A4 /* BNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNAppDelegate.m; sourceTree = "<group>"; };
 		335587F317AA708200BBF3A4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -44,6 +57,31 @@
 		3355880C17AA838A00BBF3A4 /* BNCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCell.h; sourceTree = "<group>"; };
 		3355880D17AA838A00BBF3A4 /* BNCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCell.m; sourceTree = "<group>"; };
 		3370EFE717B91FBB00807576 /* bndatastore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bndatastore.xcdatamodel; sourceTree = "<group>"; };
+		33C6426F17B979E900AB90A7 /* NoteTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteTag.h; path = ../Model/NoteTag.h; sourceTree = "<group>"; };
+		33C6427017B979E900AB90A7 /* NoteTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteTag.m; path = ../Model/NoteTag.m; sourceTree = "<group>"; };
+		33C6427217B979FD00AB90A7 /* CellCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellCalendar.h; path = ../Model/CellCalendar.h; sourceTree = "<group>"; };
+		33C6427317B979FD00AB90A7 /* CellCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellCalendar.m; path = ../Model/CellCalendar.m; sourceTree = "<group>"; };
+		33C6427517B979FD00AB90A7 /* CellDiary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellDiary.h; path = ../Model/CellDiary.h; sourceTree = "<group>"; };
+		33C6427617B979FD00AB90A7 /* CellDiary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellDiary.m; path = ../Model/CellDiary.m; sourceTree = "<group>"; };
+		33C6427817B979FD00AB90A7 /* ActionSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSource.h; path = ../Model/ActionSource.h; sourceTree = "<group>"; };
+		33C6427917B979FD00AB90A7 /* ActionSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSource.m; path = ../Model/ActionSource.m; sourceTree = "<group>"; };
+		33C6427B17B979FD00AB90A7 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = ../Model/Location.h; sourceTree = "<group>"; };
+		33C6427C17B979FD00AB90A7 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = ../Model/Location.m; sourceTree = "<group>"; };
+		33C6427E17B979FD00AB90A7 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = ../Model/Note.h; sourceTree = "<group>"; };
+		33C6427F17B979FD00AB90A7 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = ../Model/Note.m; sourceTree = "<group>"; };
+		33C6428117B979FD00AB90A7 /* NoteGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteGroup.h; path = ../Model/NoteGroup.h; sourceTree = "<group>"; };
+		33C6428217B979FD00AB90A7 /* NoteGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteGroup.m; path = ../Model/NoteGroup.m; sourceTree = "<group>"; };
+		33C6428417B979FD00AB90A7 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = ../Model/Contact.h; sourceTree = "<group>"; };
+		33C6428517B979FD00AB90A7 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = ../Model/Contact.m; sourceTree = "<group>"; };
+		33C6428717B979FD00AB90A7 /* CellNotepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellNotepad.h; path = ../Model/CellNotepad.h; sourceTree = "<group>"; };
+		33C6428817B979FD00AB90A7 /* CellNotepad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellNotepad.m; path = ../Model/CellNotepad.m; sourceTree = "<group>"; };
+		33C6428A17B979FD00AB90A7 /* Alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alarm.h; path = ../Model/Alarm.h; sourceTree = "<group>"; };
+		33C6428B17B979FD00AB90A7 /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alarm.m; path = ../Model/Alarm.m; sourceTree = "<group>"; };
+		33C6428D17B979FD00AB90A7 /* AttachmentFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentFile.h; path = ../Model/AttachmentFile.h; sourceTree = "<group>"; };
+		33C6428E17B979FD00AB90A7 /* AttachmentFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttachmentFile.m; path = ../Model/AttachmentFile.m; sourceTree = "<group>"; };
+		33C6429017B979FE00AB90A7 /* Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Attachment.h; path = ../Model/Attachment.h; sourceTree = "<group>"; };
+		33C6429117B979FE00AB90A7 /* Attachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Attachment.m; path = ../Model/Attachment.m; sourceTree = "<group>"; };
+		33C6429417B97A6000AB90A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C6429517B97A6000AB90A7 /* CoreData.framework in Frameworks */,
 				335587E217AA708200BBF3A4 /* UIKit.framework in Frameworks */,
 				335587E417AA708200BBF3A4 /* Foundation.framework in Frameworks */,
 				335587E617AA708200BBF3A4 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +108,8 @@
 				3355880717AA78AE00BBF3A4 /* notes.plist */,
 				3355880917AA7A6500BBF3A4 /* BNNotepadVC.h */,
 				3355880A17AA7A6500BBF3A4 /* BNNotepadVC.m */,
+				335587EF17AA708200BBF3A4 /* BNCoreDataTest-Prefix.pch */,
+				33C6429317B97A1B00AB90A7 /* Model */,
 				335587E717AA708200BBF3A4 /* BNCoreDataTest */,
 				335587E017AA708200BBF3A4 /* Frameworks */,
 				335587DF17AA708200BBF3A4 /* Products */,
@@ -107,15 +148,47 @@
 		335587E817AA708200BBF3A4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				33C6429417B97A6000AB90A7 /* CoreData.framework */,
 				335587E917AA708200BBF3A4 /* BNCoreDataTest-Info.plist */,
 				335587EA17AA708200BBF3A4 /* InfoPlist.strings */,
 				335587ED17AA708200BBF3A4 /* main.m */,
-				335587EF17AA708200BBF3A4 /* BNCoreDataTest-Prefix.pch */,
 				335587F317AA708200BBF3A4 /* Default.png */,
 				335587F517AA708200BBF3A4 /* Default@2x.png */,
 				335587F717AA708200BBF3A4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33C6429317B97A1B00AB90A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33C6429017B979FE00AB90A7 /* Attachment.h */,
+				33C6429117B979FE00AB90A7 /* Attachment.m */,
+				33C6428D17B979FD00AB90A7 /* AttachmentFile.h */,
+				33C6428E17B979FD00AB90A7 /* AttachmentFile.m */,
+				33C6428A17B979FD00AB90A7 /* Alarm.h */,
+				33C6428B17B979FD00AB90A7 /* Alarm.m */,
+				33C6428717B979FD00AB90A7 /* CellNotepad.h */,
+				33C6428817B979FD00AB90A7 /* CellNotepad.m */,
+				33C6428417B979FD00AB90A7 /* Contact.h */,
+				33C6428517B979FD00AB90A7 /* Contact.m */,
+				33C6428117B979FD00AB90A7 /* NoteGroup.h */,
+				33C6428217B979FD00AB90A7 /* NoteGroup.m */,
+				33C6427E17B979FD00AB90A7 /* Note.h */,
+				33C6427F17B979FD00AB90A7 /* Note.m */,
+				33C6427B17B979FD00AB90A7 /* Location.h */,
+				33C6427C17B979FD00AB90A7 /* Location.m */,
+				33C6427817B979FD00AB90A7 /* ActionSource.h */,
+				33C6427917B979FD00AB90A7 /* ActionSource.m */,
+				33C6427517B979FD00AB90A7 /* CellDiary.h */,
+				33C6427617B979FD00AB90A7 /* CellDiary.m */,
+				33C6427217B979FD00AB90A7 /* CellCalendar.h */,
+				33C6427317B979FD00AB90A7 /* CellCalendar.m */,
+				33C6426F17B979E900AB90A7 /* NoteTag.h */,
+				33C6427017B979E900AB90A7 /* NoteTag.m */,
+			);
+			name = Model;
+			path = BNCoreDataTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +264,18 @@
 				3355880B17AA7A6500BBF3A4 /* BNNotepadVC.m in Sources */,
 				3355880E17AA838A00BBF3A4 /* BNCell.m in Sources */,
 				3370EFE817B91FBB00807576 /* bndatastore.xcdatamodeld in Sources */,
+				33C6427117B979E900AB90A7 /* NoteTag.m in Sources */,
+				33C6427417B979FD00AB90A7 /* CellCalendar.m in Sources */,
+				33C6427717B979FD00AB90A7 /* CellDiary.m in Sources */,
+				33C6427A17B979FD00AB90A7 /* ActionSource.m in Sources */,
+				33C6427D17B979FD00AB90A7 /* Location.m in Sources */,
+				33C6428017B979FD00AB90A7 /* Note.m in Sources */,
+				33C6428317B979FD00AB90A7 /* NoteGroup.m in Sources */,
+				33C6428617B979FD00AB90A7 /* Contact.m in Sources */,
+				33C6428917B979FD00AB90A7 /* CellNotepad.m in Sources */,
+				33C6428C17B979FD00AB90A7 /* Alarm.m in Sources */,
+				33C6428F17B979FD00AB90A7 /* AttachmentFile.m in Sources */,
+				33C6429217B979FE00AB90A7 /* Attachment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
